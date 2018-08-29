@@ -1,0 +1,55 @@
+html, body {
+    width:100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: black;
+    font-size: 32px;
+}
+
+form {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+label {
+    position: static;
+    color: white;
+}
+
+div {
+    margin: 10px 0;
+}
+
+input {
+    position: relative;
+    font-size: inherit;
+
+    &[type=submit] {
+        border: 2px solid white;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+
+        &:hover {
+            color: black;
+            background-color: white;
+        }
+    }
+
+    &[type=text] {
+        width: 600px;
+    }
+}
+
+table{
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+.create-input {
+    display: block;
+}

@@ -1,0 +1,17 @@
+package minilinks
+
+class UrlMappings {
+
+    static mappings = {
+        "/$controller/$action?/$id?(.$format)?"{
+            constraints {
+                // apply constraints here
+            }
+        }
+        "/$link"(controller: 'l', action: 'follow') {}
+
+        "/"(controller:"l")
+        "500"(view:'/error')
+        "404"(view:'/notFound')
+    }
+}
