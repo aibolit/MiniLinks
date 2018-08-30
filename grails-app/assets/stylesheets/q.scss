@@ -23,4 +23,15 @@ form {
 
 label {
     color: white;
+    margin: 0 10px;
+}
+
+input {
+    font: inherit;
+
+    &[type=submit] {
+        background: black;
+        color: white;
+        border: 2px solid white;
+    }
 }
