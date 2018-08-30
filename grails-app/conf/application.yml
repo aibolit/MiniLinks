@@ -81,7 +81,23 @@ grails:
 endpoints:
     jmx:
         unique-names: true
-
+---
+grails:
+  plugin:
+    cookiesession:
+      enabled: true
+      encryptcookie: true
+      cryptoalgorithm: "Blowfish"
+      secret: "pineapple"
+      cookiecount: 10
+      maxcookiesize: 2048
+      sessiontimeout: 2592000 
+      cookiename: 'minilinks'
+      condenseexceptions: false
+      setsecure: true
+      httponly: true
+      path: '/'
+      serializer: 'kryo'
 ---
 hibernate:
     cache:

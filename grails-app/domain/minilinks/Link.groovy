@@ -2,6 +2,7 @@ package minilinks
 
 class Link {
     String url
+    String alias
 
     static constraints = {
         url maxSize: 1024
@@ -9,6 +10,6 @@ class Link {
     }
 
     static mapping = {
-        id column: "alias", type: 'string'
+        alias index: "alias_ix"
     }
 }

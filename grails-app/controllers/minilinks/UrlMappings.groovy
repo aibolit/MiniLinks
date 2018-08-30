@@ -8,7 +8,7 @@ class UrlMappings {
                 // apply constraints here
             }
         }
-        "/$link"(controller: 'l', action: 'follow') {}
+        "/$alias"(controller: 'w') {}
 
         "/"(controller:"l")
         "500"(view:'/error')
