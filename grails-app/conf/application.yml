@@ -78,26 +78,20 @@ grails:
                 scriptlets: html
                 taglib: none
                 staticparts: none
+    plugin:
+        cookiesession:
+            enabled: true
+            encryptcookie: true
+            cryptoalgorithm: "Blowfish"
+            sessiontimeout: 3600
+            cookiename: 'puzzlesession'
+            sethttponly: true
+            springsecuritycompatibility: false
+
 endpoints:
     jmx:
         unique-names: true
----
-grails:
-  plugin:
-    cookiesession:
-      enabled: true
-      encryptcookie: true
-      cryptoalgorithm: "Blowfish"
-      secret: "pineapple"
-      cookiecount: 10
-      maxcookiesize: 2048
-      sessiontimeout: 2592000 
-      cookiename: 'minilinks'
-      condenseexceptions: false
-      setsecure: true
-      httponly: true
-      path: '/'
-      serializer: 'kryo'
+
 ---
 hibernate:
     cache:
@@ -144,4 +138,4 @@ environments:
                 defaultTransactionIsolation: 2 # TRANSACTION_READ_COMMITTED
 ---
 minilinks:
-    secret: blueberry
+    hmmm: blueberry

@@ -2,7 +2,9 @@ package minilinks
 
 class LController {
 
-    def index() { }
+    def index() {
+        render view: '/l/index'
+     }
 
     def create() {
         def alias = params.alias ?: params.placeholder

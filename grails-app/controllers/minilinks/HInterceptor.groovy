@@ -3,7 +3,7 @@ package minilinks
 
 class HInterceptor {
 
-    order = 1
+    int order = 1
 
     boolean before() { true }
 
