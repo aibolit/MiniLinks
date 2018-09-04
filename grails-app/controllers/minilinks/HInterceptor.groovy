@@ -4,7 +4,8 @@ package minilinks
 class HInterceptor {
 
     public HInterceptor() {
-        match controller: 'l' match controller: 'q'
+        match controller: 'l' 
+        match controller: 'q'
     }
 
     final private String HTTP_PROTOCOL = 'http://'
