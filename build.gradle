@@ -62,6 +62,7 @@ dependencies {
     compile 'org.grails.plugins:cookie-session:4.0.2'
 
     assets "com.bertramlabs.plugins:sass-asset-pipeline:$assetPipelineVersion"
+    runtime 'mysql:mysql-connector-java:5.1.42'
 }
 
 bootRun {
