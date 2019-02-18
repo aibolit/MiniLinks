@@ -11,7 +11,7 @@ buildscript {
 }
 
 version ""
-group "minilinks"
+group "minilinks"   
 
 apply plugin:"eclipse"
 apply plugin:"idea"

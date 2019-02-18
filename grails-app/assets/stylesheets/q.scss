@@ -19,6 +19,14 @@ form {
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
+    & > .nopuzzle {
+        position: absolute;
+        display: block;
+        top: 300px;
+        font-size: 24px;
+        left: 50%;
+        transform: translate(-50%);
+    }
 }
 
 label {
