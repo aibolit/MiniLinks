@@ -28,7 +28,7 @@ function copyTextToClipboard(text) {
 }
 
 ready(evt => {
-    document.querySelector(".link-label").textContent = window.location.origin + "/";
+    document.querySelectorAll(".link-label").forEach(l => l.textContent = window.location.origin + "/");
     document.querySelectorAll("a").forEach(n => {
         var alias = window.location.origin + "/" + n.getAttribute('alias');
 
