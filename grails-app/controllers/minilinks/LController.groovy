@@ -11,6 +11,7 @@ class LController {
         def alias = override ? params.overrideAlias : params.alias ?: params.placeholder
         def link = Link.findByAlias(alias)
         if (link) {
+            flash.oldUrl = link.url
             if (!override) {
                 flash.color = "red"
                 flash.message = "A link already exists for this alias."

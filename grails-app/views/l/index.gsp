@@ -12,9 +12,15 @@
     <table style="margin: auto;">
         <g:if test="${flash.message}">
             <tr style="text-align: center">
-                <td colspan="2"><label style='color: ${flash.color}'>${flash.message}</label><g:if test="${flash.alias}"><a alias="${flash.alias}"></a><label class="copy-link">&#128203;</label></g:if>
+                <td colspan="2">
+                    <label style='color: ${flash.color}'>${flash.message}</label><g:if test="${flash.alias}"><a alias="${flash.alias}"></a><label class="copy-link">&#128203;</label></g:if>
                 </td>
             </tr>
+            <g:if test="${flash.oldUrl}">
+                <tr style="text-align: center;"><td colspan="2">
+                    <label>It&apos;s</label> <label style="color: #CCC">${flash.oldUrl}</label>
+                </td></tr>
+            </g:if>
         </g:if>
         <g:if test="${flash.type == "EXISTS"}">
             <tr>
